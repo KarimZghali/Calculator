@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    tools:context="fr.kayoda.calculatrice.MainActivity">
+
+
+    <TextView
+        android:id="@+id/displayResult"
+        android:textSize="30dp"
+        android:textAlignment="textEnd"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:background="#2980b9"
+        android:textColor="#FFffffff"
+        android:text="0" />
+
+    /////////////////////////////////////////////////////////
+    //////////// C O N V E R T I S S E U R /////////////////
+    ///////////////////////////////////////////////////////
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+            <RadioGroup
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                >
+
+                <RadioButton
+                    style="@style/radioButon"
+                    android:id="@+id/radioEuro"
+                    android:onClick="btnEuro"
+                    android:checked="true"
+                    android:text="€" />
+
+                <RadioButton
+                    style="@style/radioButon"
+                    android:id="@+id/radioDollar"
+                    android:onClick="btnDollar"
+                    android:text="$" />
+
+                <RadioButton
+                    style="@style/radioButon"
+                    android:id="@+id/radioLivre"
+                    android:onClick="btnLivre"
+                    android:text="£" />
+
+                <RadioButton
+                    style="@style/radioButon"
+                    android:id="@+id/radioBitcoin"
+                    android:onClick="btnBtc"
+                    android:text="Ƀ" />
+
+            </RadioGroup>
+
+            <RadioGroup
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    style="@style/radioButon"
+                    android:id="@+id/radioDeg"
+                    android:checked="true"
+                    android:text="deg" />
+
+                <RadioButton
+                    style="@style/radioButon"
+                    android:id="@+id/radioRad"
+                    android:onClick="convRad"
+                    android:text="rad" />
+
+                <RadioButton
+                    style="@style/radioButon"
+                    android:id="@+id/radioGrd"
+                    android:onClick="convGrad"
+                    android:text="grd" />
+            </RadioGroup>
+
+
+    </LinearLayout>
+
+
+    <GridLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:columnCount="4">
+
+        ////////////////////////////////////////////
+        //////////// C L A V I E R /////////////////
+        ////////////////////////////////////////////
+
+        <Button
+
+            style="@style/btnCalcul"
+            android:background="#7f8c8d"
+            android:textColor="#ffffff"
+            android:id="@+id/btnClear"
+            android:onClick="btnClear"
+            android:layout_width="160dp"
+            android:layout_column="0"
+            android:layout_row="3"
+            android:layout_columnSpan="2"
+
+            android:text="@string/effacer"
+
+             />
+
+        <Button
+
+            style="@style/btnCalcul"
+            android:textColor="#ffffff"
+            android:id="@+id/btnC"
+            android:background="#7f8c8d"
+            android:onClick="btnC"
+            android:layout_column="2"
+            android:layout_row="3"
+            android:text="C"
+            />
+
+        <Button
+            style="@style/btnCalcul"
+            android:background="#3498db"
+            android:textColor="#ffffff"
+            android:id="@+id/btnDiv"
+            android:onClick="bDiv"
+            android:layout_column="3"
+            android:layout_row="3"
+            android:text="/" />
+
+        <Button
+            style="@style/btnCalcul"
+            android:background="#bdc3c7"
+            android:onClick="b7"
+            android:id="@+id/btn7"
+            android:layout_column="0"
+            android:layout_row="4"
+            android:text="7" />
+
+        <Button
+            style="@style/btnCalcul"
+            android:background="#bdc3c7"
+            android:onClick="b8"
+            android:id="@+id/btn8"
+            android:layout_column="1"
+            android:layout_row="4"
+            android:text="8" />
+
+        <Button
+            style="@style/btnCalcul"
+            android:background="#bdc3c7"
+            android:onClick="b9"
+            android:id="@+id/btn9"
+            android:layout_column="2"
+            android:layout_row="4"
+            android:text="9" />
+
+        <Button
+            style="@style/btnCalcul"
+            android:background="#3498db"
+            android:textColor="#ffffff"
+            android:id="@+id/btnMult"
+            android:layout_column="3"
+            android:onClick="bx"
+            android:layout_row="4"
+            android:text="x" />
+
+        <Button
+            style="@style/btnCalcul"
+            android:background="#bdc3c7"
+            android:onClick="b4"
+            android:id="@+id/btn4"
+            android:layout_column="0"
+            android:layout_row="5"
+            android:text="4" />
+
+        <Button
+            style="@style/btnCalcul"
+            android:background="#bdc3c7"
+            android:onClick="b5"
+            android:id="@+id/btn5"
+            android:layout_column="1"
+            android:layout_row="5"
+            android:text="5" />
+
+        <Button
+            style="@style/btnCalcul"
+            android:background="#bdc3c7"
+            android:onClick="b6"
+            android:id="@+id/btn6"
+            android:layout_column="2"
+            android:layout_row="5"
+            android:text="6" />
+
+        <Button
+            style="@style/btnCalcul"
+            android:id="@+id/btnSous"
+            android:layout_column="3"
+            android:background="#3498db"
+            android:textColor="#ffffff"
+            android:onClick="bMoins"
+            android:layout_row="5"
+            android:text="-" />
+
+        <Button
+            style="@style/btnCalcul"
+            android:background="#bdc3c7"
+            android:id="@+id/btn1"
+            android:onClick="b1"
+            android:layout_column="0"
+            android:layout_row="6"
+            android:text="1" />
+
+        <Button
+            style="@style/btnCalcul"
+            android:background="#bdc3c7"
+            android:id="@+id/btn2"
+            android:onClick="b2"
+            android:layout_column="1"
+            android:layout_row="6"
+            android:text="2" />
+
+        <Button
+            style="@style/btnCalcul"
+            android:background="#bdc3c7"
+            android:id="@+id/btn3"
+            android:onClick="b3"
+            android:layout_column="2"
+            android:layout_row="6"
+            android:text="3" />
+
+        <Button
+            style="@style/btnCalcul"
+            android:background="#3498db"
+            android:textColor="#ffffff"
+            android:id="@+id/btnAddi"
+            android:layout_column="3"
+            android:onClick="bPlus"
+            android:layout_row="6"
+            android:text="+" />
+
+        <Button
+            style="@style/btnCalcul"
+            android:background="#bdc3c7"
+            android:id="@+id/btn0"
+            android:onClick="b0"
+            android:layout_column="0"
+            android:layout_row="7"
+            android:text="0" />
+
+        <Button
+            style="@style/btnCalcul"
+            android:id="@+id/btnVirg"
+            android:onClick="btnPoint"
+            android:layout_column="1"
+            android:layout_row="7"
+            android:background="#bdc3c7"
+            android:text="." />
+
+        <Button
+
+            style="@style/btnBig"
+            android:background="#e67e22"
+            android:textColor="#ffffff"
+            android:layout_width="160dp"
+            android:id="@+id/btnResult"
+            android:layout_columnSpan="2"
+            android:layout_column="2"
+            android:layout_row="7"
+            android:onClick="btnResult"
+            android:text="@string/resultat" />
+
+    </GridLayout>
+
+</LinearLayout>

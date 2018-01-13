@@ -1,0 +1,38 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="radioButon" parent="Theme.AppCompat.Light.DarkActionBar">
+            <item name="android:layout_marginLeft">50dp</item>
+    </style>
+
+    <style name="radioButonH" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_marginLeft">50dp</item>
+        <item name="android:layout_marginTop">350dp</item>
+
+    </style>
+
+
+    <style name="btnCalcul" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textSize">20dp</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:layout_width">80dp</item>
+    </style>
+
+    <style name="btnBig" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:textSize">20dp</item>
+    </style>
+
+
+    <style name="btnCalculParam" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+</resources>

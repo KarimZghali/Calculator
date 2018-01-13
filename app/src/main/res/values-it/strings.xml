@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">calcolatrice</string>
+    <string name="resultat">RISULTATO</string>
+    <string name="effacer">cancellare</string>
+</resources>
