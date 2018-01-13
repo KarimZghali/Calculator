@@ -1,8 +1,8 @@
 Calculator
 
-[N|Solid](https://github.com/KarimZghali/Calculator/blob/master/resources/s1.jpg?raw=true)
+[![N|Solid](https://github.com/KarimZghali/Calculator/blob/master/resources/s1.jpg?raw=true)
 
-[N|Solid](https://github.com/KarimZghali/Calculator/blob/master/resources/s2.jpg?raw=true)
+[![N|Solid](https://github.com/KarimZghali/Calculator/blob/master/resources/s2.jpg?raw=true)
 
 ## Usage:
 
